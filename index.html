@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Novogarde Insurance Compare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="Novogarde home">
+        <span class="brand-mark">N</span>
+        <span>Novogarde</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#products">Insurance</a>
+        <a href="#plans">Plans</a>
+        <a href="#claims">Claims</a>
+        <a href="#support">Support</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m21 21-4.35-4.35m1.35-5.65a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z"/></svg>
+        </button>
+        <a class="login-link" href="#">Sign in</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Compare. Choose. Stay protected.</p>
+          <h1>Insurance plans that make sense before you buy.</h1>
+          <p class="hero-text">Compare health, term, motor, and travel policies with clear benefits, fast quotes, and support from purchase to claim.</p>
+          <form class="quote-panel" aria-label="Get insurance quotes">
+            <div class="segmented" role="tablist" aria-label="Popular insurance types">
+              <button class="active" type="button" role="tab" aria-selected="true">Health</button>
+              <button type="button" role="tab" aria-selected="false">Term</button>
+              <button type="button" role="tab" aria-selected="false">Car</button>
+            </div>
+            <label>
+              <span>Mobile number</span>
+              <input type="tel" placeholder="+91 98765 43210" />
+            </label>
+            <label>
+              <span>City</span>
+              <select>
+                <option>Mumbai</option>
+                <option>Delhi NCR</option>
+                <option>Bengaluru</option>
+                <option>Hyderabad</option>
+              </select>
+            </label>
+            <button class="primary-btn" type="submit">View Quotes</button>
+          </form>
+        </div>
+        <div class="hero-media" aria-label="Family comparing insurance plans">
+          <img src="assets/insurance-hero.png" alt="Family comparing insurance options on a laptop" />
+        </div>
+      </section>
+
+      <section class="product-band" id="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <p class="eyebrow">Popular categories</p>
+          <h2 id="products-title">Find the right cover faster</h2>
+        </div>
+        <div class="product-grid">
+          <a class="product-card selected" href="#">
+            <span class="product-icon">+</span>
+            <strong>Health Insurance</strong>
+            <small>Cover family medical expenses</small>
+          </a>
+          <a class="product-card" href="#">
+            <span class="product-icon">₹</span>
+            <strong>Term Life</strong>
+            <small>High cover at lower premiums</small>
+          </a>
+          <a class="product-card" href="#">
+            <span class="product-icon">↗</span>
+            <strong>Investment Plans</strong>
+            <small>Save tax and build wealth</small>
+          </a>
+          <a class="product-card" href="#">
+            <span class="product-icon">⌁</span>
+            <strong>Car Insurance</strong>
+            <small>Renew policy in minutes</small>
+          </a>
+          <a class="product-card" href="#">
+            <span class="product-icon">✈</span>
+            <strong>Travel Insurance</strong>
+            <small>Secure every trip abroad</small>
+          </a>
+          <a class="product-card" href="#">
+            <span class="product-icon">🏢</span>
+            <strong>Business Cover</strong>
+            <small>Protect teams and assets</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="plans-section" id="plans" aria-labelledby="plans-title">
+        <div class="plans-copy">
+          <p class="eyebrow">Live quote style</p>
+          <h2 id="plans-title">Compare benefits side by side</h2>
+          <p>Sort by premium, claim settlement, room rent, network hospitals, add-ons, and waiting periods before you choose.</p>
+          <div class="stats-row">
+            <span><strong>40+</strong> insurers</span>
+            <span><strong>10 min</strong> average quote</span>
+            <span><strong>24/7</strong> claim help</span>
+          </div>
+        </div>
+        <div class="plan-list">
+          <article class="plan-card featured">
+            <div>
+              <p class="plan-tag">Best value</p>
+              <h3>Family Health Plus</h3>
+              <p>₹10 lakh cover, cashless network, annual checkup</p>
+            </div>
+            <div class="price">₹812<span>/mo</span></div>
+            <button type="button">Compare</button>
+          </article>
+          <article class="plan-card">
+            <div>
+              <p class="plan-tag">High cover</p>
+              <h3>Term Secure Max</h3>
+              <p>₹1 crore life cover, critical illness rider</p>
+            </div>
+            <div class="price">₹640<span>/mo</span></div>
+            <button type="button">Compare</button>
+          </article>
+          <article class="plan-card">
+            <div>
+              <p class="plan-tag">Fast renewal</p>
+              <h3>Motor Shield</h3>
+              <p>Zero dep add-on, roadside support, instant policy</p>
+            </div>
+            <div class="price">₹5,890<span>/yr</span></div>
+            <button type="button">Compare</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="claims-band" id="claims" aria-labelledby="claims-title">
+        <div>
+          <p class="eyebrow">After purchase</p>
+          <h2 id="claims-title">Claim support that stays with you</h2>
+        </div>
+        <div class="claim-steps">
+          <article>
+            <span>1</span>
+            <h3>Raise request</h3>
+            <p>Share policy details and documents through guided upload.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Track progress</h3>
+            <p>See insurer updates, missing items, and advisor notes.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Get closure</h3>
+            <p>Receive settlement guidance until the claim is resolved.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="support">
+      <div>
+        <strong>Novogarde</strong>
+        <p>Insurance comparison made calm, clear, and quick.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
